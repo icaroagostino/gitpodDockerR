@@ -10,5 +10,10 @@ RUN apt-get update -qq && apt-get install -y \
 	libssl-dev \
 	libssh2-1-dev \
 	libxml2-dev \
-  	git-all \
-	docker-ce docker-ce-cli containerd.io
+	apt-transport-https \
+    	ca-certificates \
+    	curl \
+    	gnupg-agent \
+    	software-properties-common \
+	docker.io \
+	git-all
